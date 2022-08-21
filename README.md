@@ -7,15 +7,38 @@ Alchemy 活动 —— Web3 之路，一个为期 10 周的 Web3 技能学习计�
 ## 使用方式
 
 1. 执行 `npm install` 命令，安装项目所需依赖库；
-2. 将 `.env_template` 重命名为 `.env`, 填写好私钥及 Alchemy Key 信息；
+2. 将 `.env_template` 重命名为 `.env`，填写好私钥及 Alchemy Key 信息；
 3. 参考 `contract` 目录下每周任务的合约源码；
 4. 参考 `script` 目录下每周任务的合约部署及执行脚本；
+
+## 水龙头（领取测试网的测试币）
+
+- Rinkeby: [https://rinkebyfaucet.com/](https://rinkebyfaucet.com/)
 
 ## 活动计划
 
 ### Week 1 - 如何开发一个 ERC721 标准的 NFT 合约？
 
 > [https://docs.alchemy.com/docs/how-to-develop-an-nft-smart-contract-erc721-with-alchemy](https://docs.alchemy.com/docs/how-to-develop-an-nft-smart-contract-erc721-with-alchemy)
+
+#### 部署合约
+
+```sh
+# 在 Rinkeby 网络部署合约
+npx hardhat run --network rinkeby scripts/week1/deploy.ts
+```
+
+合约地址：[0x9b1c0175860b8f6bd77D49037Bb1449Ebf0196Cd](https://rinkeby.etherscan.io/address/0x9b1c0175860b8f6bd77D49037Bb1449Ebf0196Cd)
+
+#### Mint 一个 NFT
+
+```sh
+ts-node scripts/week1/mint-nft.ts
+```
+
+#### 在 OpenSea 查看 Mint 的 NFT
+
+[https://testnets.opensea.io/Cryptonee](https://testnets.opensea.io/Cryptonee)
 
 ### Week 2 - 如何构建一个 “给我买杯咖啡” 的 DApp？
 

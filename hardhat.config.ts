@@ -6,20 +6,20 @@ const config: HardhatUserConfig = {
   solidity: "0.8.9",
   networks: {
     mainnet: {
-      url: process.env.MAINNET_URL || "",
-      accounts: process.env.PRIVATE_KEY_DEV1 !== undefined ? [process.env.PRIVATE_KEY_DEV1] : []
+      url: `https://eth-mainnet.g.alchemy.com/v2/${process.env.MAINNET_KEY}`,
+      accounts: [process.env.PRIVATE_KEY as string]
     },
     polygon: {
-      url: process.env.POLYGON_URL || "",
-      accounts: process.env.PRIVATE_KEY_DEV1 !== undefined ? [process.env.PRIVATE_KEY_DEV1] : []
+      url: `https://polygon-mainnet.g.alchemy.com/v2/${process.env.POLYGON_KEY}`,
+      accounts: [process.env.PRIVATE_KEY as string]
     },
     goerli: {
-      url: process.env.GOERLI_URL || "",
-      accounts: process.env.PRIVATE_KEY_DEV1 !== undefined ? [process.env.PRIVATE_KEY_DEV1] : []
+      url: `https://eth-goerli.g.alchemy.com/v2/${process.env.GOERLI_KEY}`,
+      accounts: [process.env.PRIVATE_KEY as string]
     },
     rinkeby: {
-      url: process.env.RINKEBY_URL || "",
-      accounts: process.env.PRIVATE_KEY_DEV1 !== undefined ? [process.env.PRIVATE_KEY_DEV1] : []
+      url: `https://eth-rinkeby.alchemyapi.io/v2/${process.env.RINKEBY_KEY}`,
+      accounts: [process.env.PRIVATE_KEY as string]
     }
   },
   etherscan: {
