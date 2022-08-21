@@ -99,12 +99,12 @@ async function main(): Promise<void> {
     // await buyCoffee(contract, 'Cryptonee', 'Good Job!', '0.001');
     // // 购买一大杯咖啡
     // await buyLargeCoffee(contract, 'onee', 'You are the best');
-    // 打印备忘记录
-    await printAllMemos(contract);
+    // // 打印备忘记录
+    // await printAllMemos(contract);
     // 提现资金
     await withdraw(contract);
     // 更改合约拥有者
-    await changeOwner(contract, '0x000000000055523d4949604821380457b8aafCf4');
+    // await changeOwner(contract, '0x000000000055523d4949604821380457b8aafCf4');
 }
 
 main();
