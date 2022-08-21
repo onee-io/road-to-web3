@@ -95,7 +95,7 @@ contract BuyMeACoffee {
         public
         payable
     {
-        require(msg.value >= 0.003 ether, "can't buy coffee for free!");
-        this.buyCoffee(_name, _message);
+        require(msg.value >= 0.003 ether, "min price is 0.003 ether");
+        buyCoffee(_name, _message);
     }
 }

@@ -69,7 +69,12 @@ async function withdraw(contract: Contract): Promise<void> {
  * @param price 价格（ETH）
  */
 async function buyLargeCoffee(contract: Contract, name: string, message: string): Promise<void> {
-    await buyCoffee(contract, name, message, '0.003');
+    const overrides: PayableOverrides = {
+        value: ethers.utils.parseEther('0.003')
+    };
+    const response: TransactionResponse = await contract.buyLargeCoffee(name, message, overrides);
+    const receipt: TransactionReceipt = await response.wait();
+    console.log(`购买一大杯咖啡交易已完成 txHash=${receipt.transactionHash}`);
 }
 
 /**
@@ -89,17 +94,17 @@ async function main(): Promise<void> {
     const rpcUrl = `https://eth-goerli.g.alchemy.com/v2/${process.env.GOERLI_KEY}`;
     const wallet = new Wallet(privateKey, new JsonRpcProvider(rpcUrl));
     // 初始化合约
-    const contract = initContract('0x358c9e46f5d51d361ae3259f9eaaa63afa33303c', wallet);
+    const contract = initContract('0x4cb99f420c2bcd9508eb65efed4c4f59f20712ee', wallet);
     // 购买一杯咖啡
-    await buyCoffee(contract, 'Cryptonee', 'Good Job!', '0.001');
-    // 购买一大杯咖啡
-    await buyLargeCoffee(contract, 'onee', 'You are the best');
+    // await buyCoffee(contract, 'Cryptonee', 'Good Job!', '0.001');
+    // // 购买一大杯咖啡
+    // await buyLargeCoffee(contract, 'onee', 'You are the best');
     // 打印备忘记录
     await printAllMemos(contract);
     // 提现资金
     await withdraw(contract);
     // 更改合约拥有者
-    await changeOwner(contract, '0x0000000000081a1fb7f931BDc2e3806aAa4d81A9');
+    await changeOwner(contract, '0x000000000055523d4949604821380457b8aafCf4');
 }
 
 main();
