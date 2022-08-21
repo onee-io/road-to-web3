@@ -11,87 +11,15 @@ Alchemy 活动 —— Web3 之路，一个为期 10 周的 Web3 技能学习计�
 3. 参考 `contract` 目录下每周任务的合约源码；
 4. 参考 `script` 目录下每周任务的合约部署及执行脚本；
 
-## 水龙头（领取测试网的测试币）
-
-- Rinkeby: [rinkebyfaucet.com](https://rinkebyfaucet.com)
-- Goerli: [goerlifaucet.com](https://goerlifaucet.com)
-
 ## 活动计划
 
-### Week 1 - 如何开发一个 ERC721 标准的 NFT 合约？
-
-> [https://docs.alchemy.com/docs/how-to-develop-an-nft-smart-contract-erc721-with-alchemy](https://docs.alchemy.com/docs/how-to-develop-an-nft-smart-contract-erc721-with-alchemy)
-
-#### 1. 部署合约
-
-```sh
-# 在 Rinkeby 网络部署合约
-npx hardhat run --network rinkeby scripts/week1/deploy.ts
-```
-
-合约地址：[0x9b1c0175860b8f6bd77d49037bb1449ebf0196cd](https://rinkeby.etherscan.io/address/0x9b1c0175860b8f6bd77d49037bb1449ebf0196cd)
-
-#### 2. Mint 一个 NFT
-
-```sh
-ts-node scripts/week1/mint-nft.ts
-```
-
-#### 3. 在 OpenSea 查看 Mint 的 NFT
-
-[https://testnets.opensea.io/Cryptonee](https://testnets.opensea.io/Cryptonee)
-
-### Week 2 - 如何构建一个 “给我买杯咖啡” 的 DApp？
-
-> [https://docs.alchemy.com/docs/how-to-build-buy-me-a-coffee-defi-dapp](https://docs.alchemy.com/docs/how-to-build-buy-me-a-coffee-defi-dapp)
-
-#### 1. 部署合约
-
-```sh
-# 在 Goerli 网络部署合约
-npx hardhat run --network goerli scripts/week2/deploy.ts
-```
-
-合约地址：[0x4cb99f420c2bcd9508eb65efed4c4f59f20712ee](https://goerli.etherscan.io/address/0x4cb99f420c2bcd9508eb65efed4c4f59f20712ee)
-
-#### 2. 执行购买、查看、提现操作
-
-```sh
-ts-node scripts/week2/buy-coffee.ts
-```
-
-#### 3. 构建 DApp 完成操作
-
-- [https://buymeacoffee-solidity-defi-tipping-app.onee-io.repl.co/](https://buymeacoffee-solidity-defi-tipping-app.onee-io.repl.co/)
-
-### Week 3 - 如何使用链上数据制作 NFT？
-
-> [https://docs.alchemy.com/docs/how-to-make-nfts-with-on-chain-metadata-hardhat-and-javascript](https://docs.alchemy.com/docs/how-to-make-nfts-with-on-chain-metadata-hardhat-and-javascript)
-
-### Week 4 - 如何构建一个 NFT 画廊？
-
-> [https://docs.alchemy.com/docs/how-to-create-an-nft-gallery](https://docs.alchemy.com/docs/how-to-create-an-nft-gallery)
-
-### Week 5 - 如何在合约中使用 ChainLink 的 API？
-
-> [https://docs.alchemy.com/docs/5-connect-apis-to-your-smart-contracts-using-chainlink](https://docs.alchemy.com/docs/5-connect-apis-to-your-smart-contracts-using-chainlink)
-
-### Week 6 - 如何构建一个质押类 DApp?
-
-> [https://docs.alchemy.com/docs/how-to-build-a-staking-dapp](https://docs.alchemy.com/docs/how-to-build-a-staking-dapp)
-
-### Week 7 - 如何使用 Scratch 构建一个 NFT 交易市场？
-
-> [https://docs.alchemy.com/docs/how-to-build-an-nft-marketplace-from-scratch](https://docs.alchemy.com/docs/how-to-build-an-nft-marketplace-from-scratch)
-
-### Week 8 - 如何在 Optimism 链上构建一个赌注游戏？
-
-> [https://docs.alchemy.com/docs/how-to-build-a-betting-game-on-optimism](https://docs.alchemy.com/docs/how-to-build-a-betting-game-on-optimism)
-
-### Week 9 - 如何使用 0x 的 API 构建一个代币兑换的 DApp？
-
-> [https://docs.alchemy.com/docs/how-to-build-a-token-swap-dapp-with-0x-api](https://docs.alchemy.com/docs/how-to-build-a-token-swap-dapp-with-0x-api)
-
-### Week 10 - 如何使用 Lens 协议构建一个去中心化的 Twitter？
-
-> [https://docs.alchemy.com/docs/how-to-create-a-decentralized-twitter-with-lens-protocol](https://docs.alchemy.com/docs/how-to-create-a-decentralized-twitter-with-lens-protocol)
+-  [Week 1 - 如何开发一个 ERC721 标准的 NFT 合约？](./docs/week1.md)
+- [Week 2 - 如何构建一个 “给我买杯咖啡” 的 DApp？](./docs/week2.md)
+- [Week 3 - 如何使用链上数据制作 NFT？](./docs/week3.md)
+- [Week 4 - 如何构建一个 NFT 画廊？](./docs/week4.md)
+- [Week 5 - 如何在合约中使用 ChainLink 的 API？](./docs/week5.md)
+- [Week 6 - 如何构建一个质押类 DApp?](./docs/week6.md)
+- [Week 7 - 如何使用 Scratch 构建一个 NFT 交易市场？](./docs/week7.md)
+- [Week 8 - 如何在 Optimism 链上构建一个赌注游戏？](./docs/week8.md)
+- [Week 9 - 如何使用 0x 的 API 构建一个代币兑换的 DApp？](./docs/week9.md)
+- [Week 10 - 如何使用 Lens 协议构建一个去中心化的 Twitter？](./docs/week10.md)
