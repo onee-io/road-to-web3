@@ -96,15 +96,15 @@ async function main(): Promise<void> {
     // 初始化合约
     const contract = initContract('0x4cb99f420c2bcd9508eb65efed4c4f59f20712ee', wallet);
     // 购买一杯咖啡
-    // await buyCoffee(contract, 'Cryptonee', 'Good Job!', '0.001');
-    // // 购买一大杯咖啡
-    // await buyLargeCoffee(contract, 'onee', 'You are the best');
-    // // 打印备忘记录
-    // await printAllMemos(contract);
+    await buyCoffee(contract, 'Cryptonee', 'Good Job!', '0.001');
+    // 购买一大杯咖啡
+    await buyLargeCoffee(contract, 'onee', 'You are the best');
+    // 打印备忘记录
+    await printAllMemos(contract);
     // 提现资金
     await withdraw(contract);
     // 更改合约拥有者
-    // await changeOwner(contract, '0x000000000055523d4949604821380457b8aafCf4');
+    await changeOwner(contract, '0x000000000055523d4949604821380457b8aafCf4');
 }
 
 main();
