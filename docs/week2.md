@@ -4,6 +4,10 @@
 
 水龙头（领取测试网的测试币）：[Goerli Faucet](https://goerlifaucet.com)
 
+合约：[BuyMeACoffee.sol](../contracts/week2/BuyMeACoffee.sol)
+
+脚本：[buy-coffee.ts](../scripts/week2/buy-coffee.ts)
+
 ## 操作步骤
 
 ### 1. 部署合约

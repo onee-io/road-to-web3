@@ -4,6 +4,10 @@
 
 水龙头（领取测试网的测试币）：[Rinkeby Faucet](https://rinkebyfaucet.com)
 
+合约：[CryptoneeNFT.sol](../contracts/week1/CryptoneeNFT.sol)
+
+脚本：[mint-nft.ts](../scripts/week1/mint-nft.ts)
+
 ## 操作步骤
 
 ### 1. 部署合约
