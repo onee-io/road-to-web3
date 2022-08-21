@@ -14,6 +14,7 @@ Alchemy 活动 —— Web3 之路，一个为期 10 周的 Web3 技能学习计�
 ## 水龙头（领取测试网的测试币）
 
 - Rinkeby: [https://rinkebyfaucet.com/](https://rinkebyfaucet.com/)
+- Goerli: [goerlifaucet.com](goerlifaucet.com)
 
 ## 活动计划
 
@@ -21,28 +22,49 @@ Alchemy 活动 —— Web3 之路，一个为期 10 周的 Web3 技能学习计�
 
 > [https://docs.alchemy.com/docs/how-to-develop-an-nft-smart-contract-erc721-with-alchemy](https://docs.alchemy.com/docs/how-to-develop-an-nft-smart-contract-erc721-with-alchemy)
 
-#### 部署合约
+#### 1. 部署合约
 
 ```sh
 # 在 Rinkeby 网络部署合约
 npx hardhat run --network rinkeby scripts/week1/deploy.ts
 ```
 
-合约地址：[0x9b1c0175860b8f6bd77D49037Bb1449Ebf0196Cd](https://rinkeby.etherscan.io/address/0x9b1c0175860b8f6bd77D49037Bb1449Ebf0196Cd)
+合约地址：[0x9b1c0175860b8f6bd77d49037bb1449ebf0196cd](https://rinkeby.etherscan.io/address/0x9b1c0175860b8f6bd77d49037bb1449ebf0196cd)
 
-#### Mint 一个 NFT
+#### 2. Mint 一个 NFT
 
 ```sh
 ts-node scripts/week1/mint-nft.ts
 ```
 
-#### 在 OpenSea 查看 Mint 的 NFT
+#### 3. 在 OpenSea 查看 Mint 的 NFT
 
 [https://testnets.opensea.io/Cryptonee](https://testnets.opensea.io/Cryptonee)
+
 
 ### Week 2 - 如何构建一个 “给我买杯咖啡” 的 DApp？
 
 > [https://docs.alchemy.com/docs/how-to-build-buy-me-a-coffee-defi-dapp](https://docs.alchemy.com/docs/how-to-build-buy-me-a-coffee-defi-dapp)
+
+#### 1. 部署合约
+
+```sh
+# 在 Goerli 网络部署合约
+npx hardhat run --network goerli scripts/week2/deploy.ts
+```
+
+合约地址：[0x4cb99f420c2bcd9508eb65efed4c4f59f20712ee](https://goerli.etherscan.io/address/0x4cb99f420c2bcd9508eb65efed4c4f59f20712ee)
+
+#### 2. 执行购买、查看、提现操作
+
+```sh
+ts-node scripts/week2/buy-coffee.ts
+```
+
+#### 3. 构建 DApp 完成操作
+
+- [https://buymeacoffee-solidity-defi-tipping-app.onee-io.repl.co/](https://buymeacoffee-solidity-defi-tipping-app.onee-io.repl.co/)
+
 
 ### Week 3 - 如何使用链上数据制作 NFT？
 
