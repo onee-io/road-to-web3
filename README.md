@@ -13,8 +13,8 @@ Alchemy 活动 —— Web3 之路，一个为期 10 周的 Web3 技能学习计�
 
 ## 水龙头（领取测试网的测试币）
 
-- Rinkeby: [https://rinkebyfaucet.com/](https://rinkebyfaucet.com/)
-- Goerli: [goerlifaucet.com](goerlifaucet.com)
+- Rinkeby: [rinkebyfaucet.com](https://rinkebyfaucet.com)
+- Goerli: [goerlifaucet.com](https://goerlifaucet.com)
 
 ## 活动计划
 
@@ -41,7 +41,6 @@ ts-node scripts/week1/mint-nft.ts
 
 [https://testnets.opensea.io/Cryptonee](https://testnets.opensea.io/Cryptonee)
 
-
 ### Week 2 - 如何构建一个 “给我买杯咖啡” 的 DApp？
 
 > [https://docs.alchemy.com/docs/how-to-build-buy-me-a-coffee-defi-dapp](https://docs.alchemy.com/docs/how-to-build-buy-me-a-coffee-defi-dapp)
@@ -64,7 +63,6 @@ ts-node scripts/week2/buy-coffee.ts
 #### 3. 构建 DApp 完成操作
 
 - [https://buymeacoffee-solidity-defi-tipping-app.onee-io.repl.co/](https://buymeacoffee-solidity-defi-tipping-app.onee-io.repl.co/)
-
 
 ### Week 3 - 如何使用链上数据制作 NFT？
 
