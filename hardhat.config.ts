@@ -20,10 +20,14 @@ const config: HardhatUserConfig = {
     rinkeby: {
       url: `https://eth-rinkeby.alchemyapi.io/v2/${process.env.RINKEBY_KEY}`,
       accounts: [process.env.PRIVATE_KEY as string]
+    },
+    mumbai: {
+      url: `https://polygon-mumbai.g.alchemy.com/v2/${process.env.MUMBAI_KEY}`,
+      accounts: [process.env.PRIVATE_KEY as string]
     }
   },
   etherscan: {
-    apiKey: process.env.ETHERSCAN_KEY,
+    apiKey: process.env.ETHERSCAN_KEY
   }
 };
 
