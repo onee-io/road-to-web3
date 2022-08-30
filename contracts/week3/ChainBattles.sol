@@ -26,7 +26,7 @@ contract ChainBattles is ERC721URIStorage {
     /**
      * 生成 NFT 图像
      */
-    function generateCharacter(uint256 tokenId) public returns (string memory) {
+    function generateCharacter(uint256 tokenId) public view returns (string memory) {
         bytes memory svg = abi.encodePacked(
             '<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet" viewBox="0 0 350 350">',
             '<style>.base { fill: white; font-family: serif; font-size: 14px; }</style>',
@@ -54,7 +54,7 @@ contract ChainBattles is ERC721URIStorage {
     /**
      * 生成 NFT 元数据
      */
-    function getTokenURI(uint256 tokenId) public returns (string memory) {
+    function getTokenURI(uint256 tokenId) public view returns (string memory) {
         bytes memory dataURI = abi.encodePacked(
             '{',
                 '"name": "Chain Battles #', tokenId.toString(), '",',

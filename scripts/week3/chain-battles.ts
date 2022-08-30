@@ -51,7 +51,7 @@ async function main(): Promise<void> {
     const rpcUrl = `https://polygon-mumbai.g.alchemy.com/v2/${process.env.MUMBAI_KEY}`;
     const wallet = new Wallet(privateKey, new JsonRpcProvider(rpcUrl));
     // 初始化合约
-    const contract = initContract('0x4cb99f420c2bcd9508eb65efed4c4f59f20712ee', wallet);
+    const contract = initContract('0xf82932c1c3aeD99B1934d094bB0b8041526B139B', wallet);
     // 铸造 NFT
     await mint(contract);
     // 打印 NFT 元数据
